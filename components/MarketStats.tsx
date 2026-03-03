@@ -5,13 +5,9 @@ export default async function MarketStats() {
   const stats = await getGlobalStats();
 
   
-  if (!stats) {
-    return (
-      <div className="mb-6 text-gray-500 dark:text-gray-400">
-        Market data unavailable
-      </div>
-    );
-  }
+ if (!stats) {
+  return <p className="text-gray-500">Market data unavailable</p>;
+}
 
   
   const marketCap = stats?.total_market_cap?.inr ?? 0;
