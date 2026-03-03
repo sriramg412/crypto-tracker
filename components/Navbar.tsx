@@ -23,16 +23,7 @@ export default function Navbar() {
        
         <Link
           href="/"
-          className="text-xl sm:text-2xl
-          font-bold
-          bg-linear-to-r
-          from-green-400 via-emerald-500 to-teal-500
-          bg-clip-text text-transparent
-          tracking-wide
-          hover:scale-105
-          transition
-        "
-        >
+          className="text-xl sm:text-2xl  font-bold bg-linear-to-r from-green-400 via-emerald-500 to-teal-500 bg-clip-text text-transparent tracking-wide hover:scale-105  transition " >
           CoinTracker
         </Link>
 
@@ -42,31 +33,14 @@ export default function Navbar() {
        
           <Link
             href="/login"
-            className="
-              px-4 py-2
-              text-sm font-medium
-              rounded-lg
-              text-gray-700 dark:text-gray-300
-              hover:bg-gray-100 dark:hover:bg-gray-800
-              transition
-            "
-          >
+            className=" px-4 py-2 text-sm font-medium  rounded-lg   text-gray-700 dark:text-gray-300  hover:bg-gray-100 dark:hover:bg-gray-800   transition ">
             Login
           </Link>
 
         
           <Link
             href="/signup"
-            className="
-              px-4 py-2
-              text-sm font-semibold
-              rounded-lg
-              bg-green-500 text-white
-              hover:bg-green-600
-              transition
-              shadow-sm
-            "
-          >
+            className="  px-4 py-2 text-sm font-semibold rounded-lg bg-green-500 text-white hover:bg-green-600 transition shadow-sm  " >
             Sign Up
           </Link>
 
