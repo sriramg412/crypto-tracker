@@ -6,7 +6,7 @@ import { Coin } from "@/types/coin";
 export default function CoinTable({ coins }: { coins: Coin[] }) {
   return (
     <>
-      {/* 🔹 MOBILE CARD VIEW */}
+     
       <div className="md:hidden space-y-4">
         {coins?.map((coin, index) => (
           <div
@@ -59,7 +59,7 @@ export default function CoinTable({ coins }: { coins: Coin[] }) {
         ))}
       </div>
 
-      {/* 🔹 DESKTOP TABLE VIEW */}
+    
       <div className="hidden md:block w-full overflow-x-auto rounded-2xl border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-900 shadow-lg">
         <table className="w-full text-sm">
           <thead className="bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-300">

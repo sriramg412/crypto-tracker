@@ -22,12 +22,12 @@ export default function FilteredDashboard({ coins }: Props) {
   return (
     <section className="w-full">
       
-      {/* Category Section */}
+     
       <div className="mb-4">
         <CategoryBar onSelect={setCategory} />
       </div>
 
-      {/* Table Section */}
+      
       <div className="w-full">
         <CoinTable coins={filteredCoins} />
       </div>
