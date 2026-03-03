@@ -3,6 +3,7 @@ import MarketStats from "@/components/MarketStats";
 import CategoryBar from "@/components/CategoryBar";
 import CoinTable from "@/components/CoinTable";
 import Navbar from "@/components/Navbar";
+import HomeClient from "@/components/HomeClient";
 
 
 export default async function Home() {
@@ -16,9 +17,7 @@ export default async function Home() {
       </h1>
 
       <MarketStats />
-      <CategoryBar />
-     
-       <CoinTable coins={coins ?? []} />
+      <HomeClient coins={coins ?? []} />
  
     </>
   );

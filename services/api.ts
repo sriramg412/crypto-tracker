@@ -1,11 +1,11 @@
-// services/api.ts
+
 
 export async function getCoins() {
   try {
     const res = await fetch(
       "https://api.coingecko.com/api/v3/coins/markets?vs_currency=inr&order=market_cap_desc&per_page=100&page=1&sparkline=true",
       {
-        next: { revalidate: 60 }, // revalidate every 60 seconds
+        next: { revalidate: 60 }, 
       }
     );
 
@@ -27,7 +27,7 @@ export async function getGlobalStats() {
     const res = await fetch(
       "https://api.coingecko.com/api/v3/global",
       {
-        next: { revalidate: 60 }, // better than no-store for production
+        next: { revalidate: 60 }, 
       }
     );
 

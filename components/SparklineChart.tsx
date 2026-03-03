@@ -8,7 +8,7 @@ import {
 } from "recharts";
 
 export default function SparklineChart({
-  data,
+   data,
   positive,
 }: {
   data: number[];
