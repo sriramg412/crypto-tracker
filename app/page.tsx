@@ -3,7 +3,7 @@ import MarketStats from "@/components/MarketStats";
 import CategoryBar from "@/components/CategoryBar";
 import CoinTable from "@/components/CoinTable";
 import Navbar from "@/components/Navbar";
-import HomeClient from "@/components/FilteredDashboard";
+
 import FilteredDashboard from "@/components/FilteredDashboard";
 
 

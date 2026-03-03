@@ -15,7 +15,7 @@ export default function RootLayout({
         transition-colors
       ">
         <Navbar />
-<main className="w-full px-4 sm:px-8 lg:px-12 py-6">
+<main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
   {children}
 </main>
       </body>

@@ -9,7 +9,7 @@ interface Props {
   coins: Coin[];
 }
 
-export default function HomeClient({ coins }: Props) {
+export default function FilteredDashboard({ coins }: Props) {
   const [category, setCategory] = useState("All");
 
   const filteredCoins =
@@ -20,9 +20,18 @@ export default function HomeClient({ coins }: Props) {
         );
 
   return (
-    <>
-      <CategoryBar onSelect={setCategory} />
-      <CoinTable coins={filteredCoins} />
-    </>
+    <section className="w-full">
+      
+      {/* Category Section */}
+      <div className="mb-4">
+        <CategoryBar onSelect={setCategory} />
+      </div>
+
+      {/* Table Section */}
+      <div className="w-full">
+        <CoinTable coins={filteredCoins} />
+      </div>
+
+    </section>
   );
 }
