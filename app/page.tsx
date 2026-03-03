@@ -14,7 +14,7 @@ export default async function Home() {
       <h1 className="text-3xl font-bold mb-4">
        Crypto Market Dashboard
       </h1>
-<Navbar/>
+
       <MarketStats />
       <CategoryBar />
      
